@@ -1,0 +1,10 @@
+[env:ttgo_t1]
+board = ttgo-t1
+board_build.partitions = custom_4mb_noota.csv
+build_flags = ${env.build_flags}
+              -DHAL=10
+              -DLOG_BUFFER_SIZE=10240
+upload_speed = 921600
+monitor_speed = 115200
+monitor_port = COM3
+upload_port = COM3
